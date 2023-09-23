@@ -32,5 +32,23 @@
 
     <body <?php body_class(); ?>>
 		<header>
-            HEADER
+			<div class="top-nav-header scroll">
+				<div class="container">
+					<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>">
+						<?php 
+						$image = get_field('logo', 'options');
+
+						if( !empty( $image ) ): ?>
+							<img loading="lazy" class="logo" loading="lazy" width="<?php echo esc_attr($image['width']); ?>" height="<?php echo esc_attr($image['height']); ?>" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?> - <?php echo $name; ?>" />
+						<?php endif; ?>
+					</a>
+					<?php if ( is_nav_menu( 'Menu_Principal' ) ) { ?>
+						<nav class="nav-principal">
+							<div>
+								<?php wp_nav_menu(array('container'=> false, 'menu' => 'Menu_Principal')) ?>
+							</div>
+						</nav>
+					<?php } ?>
+				</div>
+			</div>
         </header>
