@@ -1,0 +1,20 @@
+@media screen and (max-width: 991px) {
+    section.filmes .container {
+        padding: 0 20px;
+    }
+    header .nav-top-full .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    header .nav-top-full {
+        height: auto;
+        padding: 3rem 20px;
+    }
+    header .nav-top-full .container ul#menu-menu_principal {
+        padding: 0;
+    }
+    .sliders-archive .video-item, .sliders-archive .video-item figure {
+        width: 100%;
+    }
+
+}

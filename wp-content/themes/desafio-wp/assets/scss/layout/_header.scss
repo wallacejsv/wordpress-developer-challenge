@@ -1,17 +1,20 @@
 header {
-    background: #000;
-    height: 92px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    .top-nav-header {
+    .nav-top-full {
+        background: #000000E6;
+        height: 92px;
+        // position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        display: flex;
+        align-items: center;
         width: 100%;
         max-width: 100%;
         z-index: 1;
+        .top-nav-header {
+            width: 100%;
+        }
         &.on-screen {
             box-shadow: 0.0625rem 0.0625rem 2.25rem 0rem rgba(0, 0, 0, 0.15);
             transition: $transition_faster;
@@ -116,6 +119,24 @@ header {
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+
+    .featured-post {
+        .featured-info {
+            background-size: cover;
+            .container {
+                padding: 10rem 20px;
+                .infos {
+                    margin-bottom: 1.5rem;
+                    .item-info {
+
+                    }
+                }
+                .bt-infor {
+                    margin-top: 2rem;
                 }
             }
         }

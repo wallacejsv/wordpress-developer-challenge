@@ -167,3 +167,115 @@ img {
         }
     }
 }
+
+.title-block {
+    h1, h2, h3 {
+        font-size: 80px;
+        color: #fff;
+        font-family: $fontMontSerrat;
+        font-weight: 700;
+        line-height: 80px;
+        margin: 0;
+    }
+    h2 {
+        font-size: 30px;
+        color: #FF0000;
+    }
+    h3 {
+        color: #fff;
+        font-size: 20px;
+        line-height: 29px;
+        margin-top: 15px;
+    }
+}
+
+.infos {
+    gap: 10px;
+    margin: 0;
+    .item-info-box {
+        width: 140px;
+        height: 32px;
+        background: #fff;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        color: #000;
+        &.outline {
+            background: transparent;
+            border: 1px solid #fff;
+            a {
+                color: #fff;
+            }
+        }
+        a {
+            font-size: 16px;
+            color: #5A5A5A;
+            text-decoration: none;
+            font-family: $fontMontSerrat;
+            font-weight: 500;;
+            p {
+                margin: 0;
+            }
+        }
+        
+    }
+}
+
+.bt-infor {
+    a {
+        text-decoration: none;
+    }
+}
+
+button {
+    &.bt-default {
+        border: none;
+        border-radius: 3px;
+        background: #FF0000;
+        width: 310px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 16px;
+        font-family: $fontMontSerrat;
+    }
+}
+
+.slick-prev, .slick-next {
+    display: none !important;
+}
+
+.description-block {
+    p {
+        font-size: 14px;
+        color: #fff;
+        font-family: $fontMontSerrat;
+    }
+}
+
+.sliders, .sliders-archive {
+    .video-item {
+        figure {
+            height: 387px;
+            width: 91%;
+            img {
+                height: 387px;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+.sliders-archive {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    .video-item {
+        width: 240px;
+        margin-bottom: 60px;
+    }
+}
