@@ -1,0 +1,91 @@
+/*** COLORs ***/
+$color-white: #FFFFFF;
+$color-black: #000000;
+$color-primary: #073B4C;
+$color-secondary: #00D59D;
+
+body.login {
+    background-position: center;
+    background-repeat: no-repeat;
+    background: #fff;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    #login {
+        padding: 0 !important;
+        margin: unset!important;
+
+        h1 {
+            a {
+                background-image: url('../../dist/images/logos/logo.svg');
+                background-repeat: no-repeat;
+                background-position: center top;
+                -webkit-background-size: contain;
+                background-size: contain;
+                margin: 0 auto 25px auto;
+                width: 100%;
+                height: 3.75rem;
+                display: table;
+                pointer-events: none;
+            }
+        }
+    }
+
+    form {
+        background: rgba(36,36,36,.7)!important;
+        border-radius: 20px;
+        border: none!important;
+
+        label {
+            color: #fff !important;
+        }
+    }
+
+    #backtoblog a,
+    #nav a {
+        text-decoration: none;
+        color: #000 !important;
+    }
+}
+
+.privacy-policy-link {
+    color: #000 !important;
+}
+
+.login-action-confirm_admin_email #login {
+    width: 30vw!important;
+    margin-top: auto!important;
+}
+
+.login #backtoblog a, .login #nav a {
+    text-decoration: none;
+    color: #000!important;
+}
+
+.login #login_error, .login .message, .login .success {
+    background-color: #000!important;
+    color: #fff!important;
+}
+
+.wp-core-ui .button-primary {
+    background: $color-primary !important;
+    box-shadow: none !important;
+    color: $color-white;
+    text-decoration: none;
+    text-shadow: none !important;
+    border: none !important;
+    transition: all 0.3s ease-out 0s !important;
+
+    &:hover {
+        background: $color-secondary !important;
+        color: $color-primary;
+    }
+}
+
+#language-switcher {
+    background: 0 0!important;
+}

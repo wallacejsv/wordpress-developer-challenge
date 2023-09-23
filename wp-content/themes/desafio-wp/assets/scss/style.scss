@@ -1,0 +1,46 @@
+/**
+ * Variables, override bootstrap variables
+ */
+
+@import "base/mixins";
+@import "base/vars";
+@import "base/variables";
+
+/**
+ * Vendors
+ */
+@import "vendor/slick";
+@import "vendor/aos";
+@import "vendor/selectric";
+
+/**
+ * Base
+ */
+
+@import "base/base";
+@import "base/functions";
+
+/**
+ * Layout
+ */
+@import "layout/grid";
+@import "layout/header";
+@import "layout/footer";
+
+/**
+ * Components
+ */
+@import "components/buttons";
+@import "components/sliders";
+@import "components/pagination";
+
+/**
+ * Pages
+ */
+@import "pages/404";
+@import "pages/home";
+
+/**
+ * Responsive
+ */
+ @import "base/responsive";

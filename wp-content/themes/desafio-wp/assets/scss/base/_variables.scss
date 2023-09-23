@@ -1,0 +1,18 @@
+/**
+ * Put below your own bootstrap variables
+ *
+ * Bootstrap variables list: https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss
+ * Set your own theme: https://pikock.github.io/bootstrap-magic/app/index.html#!/editor
+ */
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 769px,
+    md: 992px,
+    lg: 1200px) !default;
+
+
+$container-max-widths: (
+    sm: 760px,
+    md: 980px,
+    lg: 1140px) !default;
