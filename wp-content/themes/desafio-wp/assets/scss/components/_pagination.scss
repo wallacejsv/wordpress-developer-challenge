@@ -1,0 +1,58 @@
+.pagination-wrap {
+    @include flexbox;
+    @include  align-items(center);
+    @include justify-content(center);
+    width: 100%;
+    padding: 1rem 0 1.5rem;
+
+    .navigation,
+    .nav-links {
+        width: 100%;
+        @include flexbox;
+        @include  align-items(center);
+        @include justify-content(center);
+
+        
+    }
+
+    .page-numbers {
+        @include flexbox;
+        @include  align-items(center);
+        @include justify-content(center);
+        font-family: $fontMontSerrat;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 164.02%;
+        letter-spacing: -0.04em;
+        text-align: center;
+        color: $color_1;
+        padding: 0 0.9375rem;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: #fafafa;
+        border: 1px solid $color_1;
+        border-radius: 0px;
+        text-decoration: none;
+        transition: $transition_faster;
+
+        &:first-child {
+            border-radius: 0.5rem 0rem 0rem 0.5rem;
+        }
+
+        &:last-child {
+            border-radius: 0rem 0.5rem 0.5rem 0rem
+        }
+
+        &:hover {
+            color: #fafafa;
+            background: $color_1;
+            transition: $transition_faster;
+        }
+
+        &.current {
+            font-weight: 700;
+            color: #fafafa;
+            background: $color_1;
+        }
+    }
+}
